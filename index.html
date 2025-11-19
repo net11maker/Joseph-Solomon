@@ -60,7 +60,7 @@
         <!-- 1. Hero Section -->
         <section class="relative bg-primary-navy py-16 md:py-32 overflow-hidden">
             <!-- Background Image Placeholder (use a professional city skyline image in a real application) -->
-            <div class="absolute inset-0 opacity-20" style="background-image: url('https://placehold.co/1920x800/072a4c/ffffff?text=Toronto+Skyline+Law'); background-size: cover; background-position: center;"></div>
+            <!--div class="absolute inset-0 opacity-20" style="background-image: url('https://placehold.co/1920x800/072a4c/ffffff?text=Toronto+Skyline+Law'); background-size: cover; background-position: center;"></div-->
             
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight">
@@ -230,7 +230,8 @@
 
                     <!-- Simple Contact Form (Action is placeholder) -->
                     <div class="lg:col-span-7 mt-10 lg:mt-0 p-8 bg-gray-50 rounded-2xl shadow-xl">
-                        <form action=""mailto:farzin@switchtrak.com" method="POST" class="space-y-6">
+                        <!--form action="mailto:farzin@switchtrak.com" method="POST" class="space-y-6"-->
+                        <form action="https://formsubmit.co/farzin@switchtrak.com" method="POST" class="space-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-primary-navy">Full Name</label>
                                 <input type="text" name="name" id="name" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 focus:ring-accent-gold focus:border-accent-gold">
@@ -258,6 +259,20 @@
                             </button>
                         </form>
                     </div>
+     
+
+                    <!-- Chat bot -->
+                    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+                    <script type="module">
+                        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+                        createChat({
+                            webhookUrl: '',
+                            initialMessages: [
+                                'Hi, Mira here. Let me know if you have any questions.']
+                        });
+                    </script>
+
                 </div>
             </div>
         </section>
@@ -270,10 +285,10 @@
             <div class="md:flex md:items-center md:justify-between">
                 <div class="flex justify-center space-x-6 md:order-2">
                     <!-- Social Icons Placeholder -->
-                    <a href="#" class="text-gray-400 hover:text-accent-gold">
+                    <!--a href="#" class="text-gray-400 hover:text-accent-gold">
                         <span class="sr-only">LinkedIn</span>
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.367-4-3.535-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
-                    </a>
+                    </a-->
                 </div>
                 <div class="mt-8 md:mt-0 md:order-1">
                     <p class="text-center text-base text-gray-400">
