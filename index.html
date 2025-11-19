@@ -262,9 +262,31 @@
      
 
 <!-- new code to be removed -->
-<script src="
-https://cdn.jsdelivr.net/npm/@n8n/chat@0.66.0/dist/chat.umd.min.js
-"></script>
+<!-- Widget Configuration -->
+<script>
+    window.ChatWidgetConfig = {
+        webhook: {
+            url: 'https://datahustle.app.n8n.cloud/webhook-test/a652228f-3957-473e-8e6e-72f096f2ea56',
+            route: 'general'
+        },
+        branding: {
+            logo: 'https://cdn.jsdelivr.net/gh/net11maker/josephsolomon@main/images/Main_Logo.jpg',
+            name: 'Joseph Solomon Law',
+            welcomeText: 'Hi 👋, how can we help?',
+            responseTimeText: 'We typically respond right away'
+        },
+        style: {
+            primaryColor: '#854fff',
+            secondaryColor: '#6b3fd4',
+            position: 'right', // 'left' or 'right'
+            backgroundColor: '#ffffff',
+            fontColor: '#333333'
+        }
+    };
+</script>
+
+<!-- Widget Script -->
+<script src="https://cdn.jsdelivr.net/gh/net11maker/josephsolomon@main/js/chat-widget.js"></script>
 <!-- new code to be removed -->
 
 
