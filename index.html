@@ -60,7 +60,7 @@
         <!-- 1. Hero Section -->
         <section class="relative bg-primary-navy py-16 md:py-32 overflow-hidden">
             <!-- Background Image Placeholder (use a professional city skyline image in a real application) -->
-            <!--div class="absolute inset-0 opacity-20" style="background-image: url('https://placehold.co/1920x800/072a4c/ffffff?text=Toronto+Skyline+Law'); background-size: cover; background-position: center;"></div-->
+            <div class="absolute inset-0 opacity-20" style="background-image: url('https://placehold.co/1920x800/072a4c/ffffff?text=Toronto+Skyline+Law'); background-size: cover; background-position: center;"></div>
             
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight">
@@ -230,8 +230,7 @@
 
                     <!-- Simple Contact Form (Action is placeholder) -->
                     <div class="lg:col-span-7 mt-10 lg:mt-0 p-8 bg-gray-50 rounded-2xl shadow-xl">
-                        <!--form action="mailto:farzin@switchtrak.com" method="POST" class="space-y-6"-->
-                        <form action="https://formsubmit.co/farzin@switchtrak.com" method="POST" class="space-y-6">
+                        <form action="mailto:josephsolomonlaw@gmail.com" method="POST" class="space-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-primary-navy">Full Name</label>
                                 <input type="text" name="name" id="name" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 focus:ring-accent-gold focus:border-accent-gold">
@@ -259,56 +258,51 @@
                             </button>
                         </form>
                     </div>
-     
-
-<!-- new code to be removed -->
-<!-- Widget Configuration -->
-<script>
-    window.ChatWidgetConfig = {
-        webhook: {
-            url: 'https://datahustle.app.n8n.cloud/webhook-test/a652228f-3957-473e-8e6e-72f096f2ea56',
-            route: 'general'
-        },
-        branding: {
-            logo: 'https://cdn.jsdelivr.net/gh/net11maker/josephsolomon@main/images/Main_Logo.jpg',
-            name: 'Joseph Solomon Law',
-            welcomeText: 'Hi 👋, how can we help?',
-            responseTimeText: 'We typically respond right away'
-        },
-        style: {
-            primaryColor: '#854fff',
-            secondaryColor: '#6b3fd4',
-            position: 'right', // 'left' or 'right'
-            backgroundColor: '#ffffff',
-            fontColor: '#333333'
-        }
-    };
-</script>
-
-<!-- Widget Script -->
-<script src="https://cdn.jsdelivr.net/gh/net11maker/josephsolomon@main/js/chat-widget.js"></script>
-<!-- new code to be removed -->
-
-
-
-                    <!-- Chat bot -->
-                    <!--link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-                    <script type="module">
-                        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-                        createChat({
-                            webhookUrl: 'https://datahustle.app.n8n.cloud/webhook-test/a652228f-3957-473e-8e6e-72f096f2ea56',
-                            initialMessages: [
-                                'Hi, Mira here. Let me know if you have any questions.']
-                        });
-                    </script-->
-
                 </div>
             </div>
+        </section>
+        <section id="chatbot">
+            <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+            <script type="module">
+                import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+                createChat({
+                    webhookUrl: 'https://datahustle.app.n8n.cloud/webhook/029e798e-f6ec-4302-a29a-f576bf478462/chat',
+                    initialMessages: [
+                        'Hi, Mira here. Let me know if you have any questions.']
+                });
+            </script>
+
+            
+            <style>
+                /* Hide "Powered by n8n" footer */
+                #n8n-chat .chat-powered-by {
+                    display: none !important;
+                }
+
+                /* Chat bubble launcher */
+                #n8n-chat .chat-window-toggle {
+                    background-color: #975149 !important;
+                    /* your new brand color */
+                }
+
+                /* Optional: white chat icon inside the bubble */
+                #n8n-chat .chat-window-toggle svg {
+                    fill: #ffffff !important;
+                }
+
+                /* Chat header section */
+                #n8n-chat .chat-window {
+                    --chat--header--background: #404658;
+                    --chat--header--color: #ffffff;
+                }
+            </style>
+
         </section>
 
     </main>
 
+    
     <!-- Footer -->
     <footer class="bg-primary-navy">
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">

@@ -215,7 +215,7 @@
     brandHeader.className = 'brand-header';
     brandHeader.innerHTML = `
         <div class="mascot" title="Mascot">🤖</div>
-        <span>Chat  Bot</span>
+        <span>ChatBot</span>
         <button class="close-button" aria-label="Close chat">×</button>
     `;
     chatContainer.appendChild(brandHeader);
